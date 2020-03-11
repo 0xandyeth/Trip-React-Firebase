@@ -1,0 +1,77 @@
+{
+  "name": "material-kit-react",
+  "version": "1.8.0",
+  "description": "Material Kit React. Coded by Creative Tim",
+  "private": true,
+  "main": "dist/index.js",
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^2.1.1",
+    "@material-ui/core": "4.3.2",
+    "@material-ui/icons": "^4.2.1",
+    "asyncawait": "^3.0.0",
+    "bootstrap": "^4.4.1",
+    "classnames": "2.2.6",
+    "firebase": "^7.8.0",
+    "firebase-tools": "^7.12.1",
+    "history": "4.9.0",
+    "lodash": "^4.17.15",
+    "material-ui-icons": "^1.0.0-beta.36",
+    "moment": "2.24.0",
+    "node-sass": "^4.13.1",
+    "nouislider": "14.0.2",
+    "prop-types": "15.7.2",
+    "react": "^16.9.0",
+    "react-available-times": "^1.4.0",
+    "react-calendar": "^2.19.2",
+    "react-collapsible": "^2.7.0",
+    "react-datepicker": "^2.14.0",
+    "react-datetime": "2.16.3",
+    "react-dom": "^16.9.0",
+    "react-dropdown": "^1.6.4",
+    "react-dropdown-select": "^4.1.1",
+    "react-load-script": "0.0.6",
+    "react-router-dom": "5.0.1",
+    "react-scripts": "^3.3.0",
+    "react-slick": "0.25.2",
+    "react-swipeable-views": "0.13.3",
+    "reactstrap": "^8.4.1",
+    "recompose": "^0.30.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.5.5",
+    "@babel/plugin-proposal-class-properties": "7.5.5",
+    "@babel/preset-env": "7.5.5",
+    "@babel/preset-react": "7.0.0",
+    "eslint-config-prettier": "6.0.0",
+    "eslint-plugin-prettier": "3.1.0",
+    "eslint-plugin-react": "7.14.3",
+    "gulp": "4.0.2",
+    "gulp-append-prepend": "1.0.8",
+    "prettier": "1.18.2"
+  },
+  "optionalDependencies": {
+    "typescript": "3.5.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build && gulp licenses",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "lint:check": "eslint . --ext=js,jsx;  exit 0",
+    "lint:fix": "eslint . --ext=js,jsx --fix;  exit 0",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+    "build-package-css": "node-sass src/assets/scss/material-kit-react.scss dist/material-kit-react.css",
+    "build-package": "npm run build-package-css && babel src --out-dir dist",
+    "compile-sass": "node-sass src/assets/scss/material-kit-react.scss src/assets/css/material-kit-react.css",
+    "minify-sass": "node-sass src/assets/scss/material-kit-react.scss src/assets/css/material-kit-react.min.css --output-style compressed",
+    "map-sass": "node-sass src/assets/scss/material-kit-react.scss src/assets/css/material-kit-react.css --source-map true"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": []
+  }
+}
